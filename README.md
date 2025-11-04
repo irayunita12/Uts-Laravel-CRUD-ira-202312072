@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📌 Projek UTS PBF (Pemrograman Berbasis Framework)
 
-## Getting Started
+Dokumentasi ini dibuat untuk memenuhi tugas mata kuliah **Pemrograman Berbasis Framework (PBF)**.  
+Project ini berisi aplikasi berbasis web dengan fitur CRUD dan beberapa fitur tambahan seperti export PDF/Excel.
 
-First, run the development server:
+---
+
+## 👩‍💻 **Identitas Penyusun**
+| Keterangan        | Isi                             |
+|-------------------|----------------------------------|
+| Nama              | IRAYUNITA                       |
+| NIM               | 202312072                       |
+| Kelas             | TI Pagi                  |
+| Mata Kuliah       | Pemrograman Berbasis Framework  |
+| Dosen Pengampu    | Fiky Anggara,S.Kom,M.Kom|
+
+---
+
+## 📖 **Deskripsi Singkat Proyek**
+Aplikasi ini dibuat menggunakan **PHP Laravel Framework** dan bertujuan untuk melakukan:
+- Pengelolaan data (CRUD – Create, Read, Update, Delete).
+- Export data ke **PDF** dan **Excel**.
+- Tampilan UI responsif dan mudah digunakan.
+
+---
+
+## ⚙️ **Teknologi yang Digunakan**
+- **Laravel** (PHP Framework)
+- **MySQL / phpMyAdmin**
+- **Bootstrap / Tailwind CSS**
+- **XAMPP / Apache**
+- **Git & GitHub (Version Control)**
+
+---
+
+## 🚀 **Cara Menjalankan Proyek di Lokal (Localhost)**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# 1. Clone repository ini:
+git clone https://github.com/irayunita12/Uts-Laravel-CRUD-ira-202312072.git
+
+# 2. Masuk ke folder project:
+cd projek-uts-pbf
+
+# 3. Install dependency Laravel:
+composer install
+
+# 4. Copy file .env
+cp .env.example .env
+
+# 5. Atur koneksi database di file .env
+DB_DATABASE=cd_crud
+DB_USERNAME=root
+DB_PASSWORD=
+
+# 6. Generate key Laravel:
+php artisan key:generate
+
+# 7. Migrasi database + seeder (jika ada)
+php artisan migrate --seed
+
+# 8. Jalankan server:
+php artisan serve
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✅ **Fitur-Fitur Aplikasi**
+- ✅ Login (opsional jika ada)
+- ✅ CRUD (Tambah, Edit, Hapus, Detail Data)
+- ✅ Export **PDF**
+- ✅ Export **Excel**
+- ✅ Pencarian & Pagination Data
+- ✅ Tampilan responsif (Bootstrap/Tailwind)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🗂️ **Struktur Folder Utama Laravel**
+```
+projek-uts-pbf/
+│
+├── app/          # Controller, Model, dll.
+├── resources/    # Views (Blade Template)
+├── routes/       # web.php (Routing)
+├── public/       # File frontend
+└── database/     # Migrations dan Seeder
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📷 **Screenshot Tampilan (Opsional)**
+Kamu bisa tambahkan gambar seperti:
+```
+/screenshots/login-page.png
+/screenshots/dashboard.png
+/screenshots/data-crud.png
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📌 **Lisensi**
+Project ini dibuat untuk keperluan akademik dan pembelajaran.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 💬 **Kontak**
+- 📧 Email: Irayunita2023@gmail.com 
+- 💻 GitHub: https://github.com/irayunita12
+
+---
+
